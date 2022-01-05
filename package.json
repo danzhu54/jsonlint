@@ -1,6 +1,6 @@
 {
   "author": "Zach Carter <zach@carter.name> (http://zaa.ch)",
-  "name": "jsonlint",
+  "name": "jsonlint-dir",
   "description": "Validate JSON",
   "keywords": [
     "json",
@@ -13,10 +13,10 @@
   "preferGlobal": true,
   "repository": {
     "type": "git",
-    "url": "git://github.com/zaach/jsonlint.git"
+    "url": "git://github.com/danzhu54/jsonlint-dir.git"
   },
   "bugs": {
-    "url": "http://github.com/zaach/jsonlint/issues"
+    "url": "http://github.com/danzhu54/jsonlint-dir/issues"
   },
   "main": "lib/jsonlint.js",
   "bin": {
@@ -37,6 +37,6 @@
   "scripts": {
     "test": "node test/all-tests.js"
   },
-  "homepage": "http://zaach.github.com/jsonlint/",
+  "homepage": "http://jsonlint.com",
   "optionalDependencies": {}
 }

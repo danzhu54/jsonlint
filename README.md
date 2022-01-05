@@ -1,32 +1,29 @@
 JSON Lint
 =========
-
-A pure [JavaScript version](http://zaach.github.com/jsonlint/) of the service provided at [jsonlint.com](http://jsonlint.com).
+This is a fork of [jsonlint](http://zaach.github.com/jsonlint/) with the ability to parse through directories for the purpose of linting files during CI.
 
 ## Command line interface
 Install jsonlint with npm to use the command line interface:
 
-    npm install jsonlint -g
+    npm install jsonlint-dir -g
 
 Validate a file like so:
 
-    jsonlint myfile.json
+    jsonlint-dir -f myfile.json
 
-or pipe input into stdin:
+Validate a directory like so:
 
-    cat myfile.json | jsonlint
+    jsonlint-dir -d mydirectory
 
-jsonlint will either report a syntax error with details or pretty print the source if it is valid.
+jsonlint-dir will either report a syntax error with details or pretty print the source if it is valid.
 
 ### Options
 
-    $ jsonlint -h
-
-    Usage: jsonlint [file] [options]
-
-    file     file to parse; otherwise uses stdin
+    $ jsonlint-dir -h
 
     Options:
+       -f, --file               file to lint
+       -d, --dir                directory to lint
        -v, --version            print version and exit
        -s, --sort-keys          sort object keys
        -i, --in-place           overwrite the file

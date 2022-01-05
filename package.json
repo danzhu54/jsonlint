@@ -35,7 +35,9 @@
     "uglify-js": "*"
   },
   "scripts": {
-    "test": "node test/all-tests.js"
+    "test": "node test/all-tests.js",
+    "bundle": "node scripts/bundle > web/jsonlint.js",
+    "prepublish": "npm run bundle"
   },
   "homepage": "http://jsonlint.com",
   "optionalDependencies": {}

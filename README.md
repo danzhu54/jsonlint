@@ -9,17 +9,17 @@ Install jsonlint with npm to use the command line interface:
 
 Validate a file like so:
 
-    jsonlint-dir -f myfile.json
+    jsonlint -f myfile.json
 
 Validate a directory like so:
 
-    jsonlint-dir -d mydirectory
+    jsonlint -d mydirectory
 
-jsonlint-dir will either report a syntax error with details or pretty print the source if it is valid.
+jsonlint will either report a syntax error with details or pretty print the source if it is valid.
 
 ### Options
 
-    $ jsonlint-dir -h
+    $ jsonlint -h
 
     Options:
        -f, --file               file to lint
